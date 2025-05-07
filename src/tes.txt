@@ -1,0 +1,22 @@
+import matplotlib.pyplot as plt
+
+# Data contoh
+metode = ['Tangga', 'Lift']
+waktu = [45, 30]  # waktu dalam detik
+
+# Membuat grafik batang
+plt.figure(figsize=(6, 4))
+bars = plt.bar(metode, waktu, color=['sienna', 'steelblue'])
+
+# Menambahkan label dan judul
+plt.title('Perbandingan Waktu Tempuh: Tangga vs Lift')
+plt.ylabel('Waktu (detik)')
+plt.ylim(0, max(waktu) + 10)
+
+# Menambahkan nilai di atas batang
+for bar in bars:
+    yval = bar.get_height()
+    plt.text(bar.get_x() + bar.get_width()/2, yval + 1, f'{yval} detik', ha='center', va='bottom')
+
+plt.tight_layout()
+plt.show()
