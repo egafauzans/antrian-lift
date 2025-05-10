@@ -115,3 +115,6 @@ plt.show()
 # Print hasil rekap
 print(f"Rata-rata waktu tunggu mahasiswa numpang: {np.mean(waktu_tunggu_numpang):.2f} detik")
 print(f"Rata-rata waktu tunggu mahasiswa menunggu: {np.mean(waktu_tunggu_normal):.2f} detik")
+
+
+# tes
